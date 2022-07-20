@@ -21,7 +21,7 @@ let anim = () => {
       if (four.checked === true) {
         int = window.setInterval( () => {
           let r = Math.floor(Math.random() * 4);
-          im.src = 'CGI/' + arr[r] + '.png';
+          im.src = 'https://molnaristvan95.github.io/chuwanchi/' + arr[r] + '.png';
         }, 1);
         window.setTimeout( () => {
           window.clearInterval(int);
@@ -33,7 +33,7 @@ let anim = () => {
       } else {
         int = window.setInterval( () => {
           let r = Math.floor(Math.random() * 3);
-          im.src = 'CGI/' + arr[r] + '.png';
+          im.src = 'https://molnaristvan95.github.io/chuwanchi/' + arr[r] + '.png';
         }, 1);
         window.setTimeout( () => {
           window.clearInterval(int);
