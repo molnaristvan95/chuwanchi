@@ -60,7 +60,7 @@ let integer = 0,
         document.body.insertBefore(qrCode, null);
         s.classList.add('share');
         qrCode.classList.add('qr');
-        qrCode.src = 'CGI/shareChu4.png';
+        qrCode.src = 'https://molnaristvan95.github.io/chuwanchi/shareChu4.png';
         qrCode.alt = 'QR code reading filed...';
         qrCode.style.opacity = 1;
   s.addEventListener('click', () => {
