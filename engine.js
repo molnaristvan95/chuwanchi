@@ -52,7 +52,31 @@ b.addEventListener('click', () => {
 });
 
 
-
+let integer = 0,
+    shareF = () => {
+  let s = document.createElement('DIV'),
+      qrCode = document.createElement('IMG');
+        document.body.insertBefore(s, null);
+        document.body.insertBefore(qrCode, null);
+        s.classList.add('share');
+        qrCode.classList.add('qr');
+        qrCode.src = 'CGI/shareChu4.png';
+        qrCode.alt = 'QR code reading filed...';
+        qrCode.style.opacity = 1;
+  s.addEventListener('click', () => {
+    if (integer === 0) {
+      integer = 1;
+      qrCode.style.display = 'block';
+    } else {
+      integer = 0;
+      qrCode.style.display = 'none';
+    }
+  });
+}
+shareF();
+( () => {
+  document.getElementsByClassName('qr')[0].style.display = 'none';
+})();
 
 
 
