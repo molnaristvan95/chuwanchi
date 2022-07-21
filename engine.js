@@ -104,6 +104,15 @@ opacity:1;
 }
 clipboard();
 
+let saveCGI = () => {
+      let allImg = document.getElementsByTagName('IMG'),
+          len = allImg.length;
+      for (let o = 0; o < len; o++) {
+            allImg[o].setAttribute('draggable', false);
+      }
+}
+saveCGI();
+
 
 
 console.timeEnd();
