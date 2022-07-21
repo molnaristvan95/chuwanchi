@@ -79,6 +79,32 @@ shareF();
 })();
 
 
+let clipboard = () => {
+  for (let x = 0; x < arr.length; x++) {
+    let them = document.createElement('IMG'),
+        size = 128;
+    them.classList.add('kernel');
+    them.src = 'https://molnaristvan95.github.io/chuwanchi/' + arr[x] + '.png';
+    document.body.appendChild(them, null);
+    them.setAttribute('style', `
+position:fixed;
+width:` + size + `px;
+height:` + size + `px;
+left:16%;
+top:` + (size * x + 16) + `px;
+display:block;
+opacity:1;
+`);
+  }
+  window.setTimeout( () => {
+    for (let y = 0; y < arr.length; y++) {
+      document.querySelector('.kernel').remove();
+    }
+  }, 1024);
+}
+clipboard();
+
+
 
 console.timeEnd();
 console.log('%c The program successfully was loaded', 'font-size:25px; color:#ff0;');
