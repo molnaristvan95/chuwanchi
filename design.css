@@ -108,5 +108,18 @@ button{
   height:16px;
   background:#f60;
   border-radius:50%;
+  z-index:99;
 }
+.qr{
+  position:fixed;
+  z-index:64;
+  width:100%;
+  height:100%;
+  left:0;
+  top:0;
+  margin:0;
+  display:none;
+  object-fit:contain;
+}
+
 
