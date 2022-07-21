@@ -75,6 +75,9 @@ figure{
   height:65vw;
   margin:5vh auto;
 }
+#im:hover{
+  opacity:1;
+}
 button{
   padding:16px;
   width:128px;
