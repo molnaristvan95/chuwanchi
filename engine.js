@@ -43,6 +43,7 @@ let anim = () => {
           }, 4000);
         }, (1000 * 4));
       }
+      i.alt = i.src;
     };
 
 b.addEventListener('click', () => {
